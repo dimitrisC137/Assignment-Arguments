@@ -20,7 +20,7 @@ def force(mass: float , body: str = "earth"):
         "moon"    : 1.6,
         "pluto"   : 0.6
         }
-    return mass * celestial_bodies[body]
+    return mass * celestial_bodies["neptune"] # or body
 
 #part 3
 result_0 = force(5.972)
@@ -31,8 +31,3 @@ def pull(m1: float,m2: float ,d: float):
     return gravity
 result_1 = pull(800,1500,3**2)
 print(f"the pull is {round(result_1,8)}")
-
-
-
-
-
