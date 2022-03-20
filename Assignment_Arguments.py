@@ -22,9 +22,10 @@ def force(mass: float , body: str = "earth"):
         }
     return mass * celestial_bodies["neptune"] # or body
 
-#part 3
 result_0 = force(5.972)
 print(f"The force is {round(result_0,1)}*10^24 kg")
+
+#part 3
 
 def pull(m1: float,m2: float ,d: float):
     gravity = (6.674*10**-11*(m1*m2))/d**2
